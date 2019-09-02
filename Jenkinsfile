@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
 	    	sh 'touch package.json'
-		sh 'cat << EOF
+		sh 'cat << EOF > package.json
 { 
   "name": "my-app",
   "version": "0.1.0",
